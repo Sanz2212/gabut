@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Lucu 😆</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 40px;
+            animation: goyang 1s infinite alternate;
+        }
+
+        @keyframes goyang {
+            from { transform: rotate(-5deg); }
+            to { transform: rotate(5deg); }
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff6f61;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff3b2e;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hai Kamu 😳</h1>
+    <p>Klik tombol di bawah ini ya 👇</p>
+
+    <button onclick="kasihPesan()">Klik Aku!</button>
+
+    <script>
+        function kasihPesan() {
+            let pesan = [
+                "Kamu keren banget 😎",
+                "Jangan lupa makan ya 🍜",
+                "Tetap semangat 💪",
+                "Kamu pasti bisa! 🚀",
+                "Senyum dong 😊"
+            ];
+
+            let random = Math.floor(Math.random() * pesan.length);
+            alert(pesan[random]);
+        }
+    </script>
+
+</body>
+</html>
